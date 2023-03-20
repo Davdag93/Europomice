@@ -276,7 +276,6 @@ h6 {
 }
 
 .thm-btn:hover {
-    background-color: var(--thm-primary);
     color: #ffffff !important;
 }
 
@@ -498,7 +497,6 @@ h6 {
     transition: all 0.4s ease;
     display: none;
     border-radius: 50%;
-    transition: all 0.4s ease;
 }
 .scroll-to-top-button {
     z-index: 99;
@@ -510,13 +508,15 @@ h6 {
     color:var(--thm-black);
     width: 120px; 
     border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     right:0px;
     font-size: 0.9rem;
     line-height: 1.2;
     padding-top: 5px;
 }
 .scroll-to-top-button:hover {
-    background: var(--thm-primary);
+    background: var(--thm-base);
 }
 .button-1 {
     bottom: 300px;
@@ -535,7 +535,8 @@ h6 {
     bottom: 150px;
     height: 40px;
     width: 50px;
-    display: none !important;
+    position: absolute;
+    right: -60px;
 }
 .scroll-to-top i {
     color: #ffffff;
@@ -543,9 +544,6 @@ h6 {
     line-height: 45px;
 }
 
-.scroll-to-top:hover {
-    background-color: var(--thm-primary);
-}
 
 .scroll-to-top:hover i {
     color: #fff;
@@ -853,7 +851,7 @@ h6 {
     transition: all 500ms ease;
 }
 .topbar-one__social a:hover {
-    background-color: var(--thm-primary);
+    background-color: var(--thm-base);
     color: #fff;
 }
 .topbar-one__social.home-four a {
@@ -870,7 +868,7 @@ h6 {
 --------------------------------------------------------------*/
 .main-nav__header-one {
     position: relative;
-    background: #f5f0e9;
+    background: #1FA138;
 }
 .main-nav__header-one .container {
     position: relative;
@@ -900,7 +898,7 @@ h6 {
 }
 .main-nav__search {
     position: relative;
-    color: var(--thm-black);
+    color: #fff;
     font-size: 25px;
     transition: all 500ms ease;
 }
@@ -908,7 +906,7 @@ h6 {
     margin-left: 120px;
 }
 .main-nav__search:hover {
-    color: var(--thm-base);
+    color: var(--thm-black);
 }
 .main-nav__left .side-menu__toggler {
     position: relative;
@@ -952,7 +950,7 @@ h6 {
     display: inline-block;
     padding: 0px 13px;
     border-radius: 5px;
-    color: #878986;
+    color: #fff;
     font-size: 16px;
     line-height: 40px;
     font-weight: 500;
@@ -1108,7 +1106,7 @@ h6 {
     left: 0;
     width: 100%;
     z-index: 99;
-    background-color: #FFFFFF;
+    background-color: #1FA138;
     box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.06);
     opacity: 0;
     -webkit-transform: translateY(-110%);
@@ -4889,7 +4887,7 @@ h6 {
     z-index: 1;
 }
 .growing_box {
-    background: var(--thm-primary);
+    background: var(--thm-base);
     display: flex;
     justify-content: center;
     align-items: center;

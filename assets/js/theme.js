@@ -619,8 +619,7 @@ Brand One Carousel
             e.preventDefault();
         });
     }
-
-     if ($(".scroll-to-target").length) {
+      if ($(".scroll-to-target").length) {
         $(".scroll-to-target").on("click", function () {
             var target = $(this).attr("data-target");
             // animate
@@ -632,7 +631,7 @@ Brand One Carousel
             );
 
             return false;
-        });
+        }); 
     }
 
     if ($(".search-popup__toggler").length) {
@@ -837,7 +836,7 @@ Brand One Carousel
                 $(".scroll-to-top").fadeOut(500);
             }
         }
-        OnePageMenuScroll();
+         OnePageMenuScroll();
         if ($(".scroll-to-top-button").length) {
             var strickyScrollPos = 100;
             if ($(window).scrollTop() > strickyScrollPos) {
@@ -845,7 +844,8 @@ Brand One Carousel
             } else if ($(this).scrollTop() <= strickyScrollPos) {
                 $(".scroll-to-top-button").fadeOut(500);
             }
-        }
+        } 
+
     });
 
     $(window).on("load", function () {
