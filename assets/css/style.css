@@ -535,8 +535,7 @@ h6 {
     bottom: 150px;
     height: 40px;
     width: 50px;
-    position: absolute;
-    right: -60px;
+    right: -50px;
 }
 .scroll-to-top i {
     color: #ffffff;
@@ -2014,7 +2013,7 @@ h6 {
     margin-top: 30px;
 }
 .side-menu__content p a {
-    color: var(--thm-primary);
+    color: var(--thm-base);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
@@ -3116,7 +3115,7 @@ h6 {
 }
 .service_1_img .hover_box span:hover {
     color: var(--thm-base);
-    background: var(--thm-primary);
+    background: var(--thm-base);
     
 }
 
@@ -3528,7 +3527,7 @@ h6 {
 }
 .recent_project_single .hover_box span:hover {
     color: white;
-    background: var(--thm-primary);
+    background: var(--thm-base);
 }
 
 /*--------------------------------------------------------------
@@ -4258,7 +4257,7 @@ h6 {
 }
 
 .site-footer__social a:hover {
-    background-color: var(--thm-primary);
+    background-color: var(--thm-base);
     color: #ffffff;
 }
 
@@ -5745,7 +5744,6 @@ h6 {
     left: 0;
     right: 0;
     top:0;
-    background: var(--thm-primary);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 0px;
@@ -7860,7 +7858,7 @@ h6 {
 .contact-one__form .input-group {
     margin-bottom: 20px;
 }
-.input-group.contact__btn {
+.input-group .contact__btn {
     margin-bottom: 0;
 }
 .contact-one__form
@@ -7885,10 +7883,20 @@ h6 {
     padding-top: 20px;
 }
 
-.contact-one__btn:hover {
-    background: var(--thm-black);
-}
-
+ .contact-one__btn {
+    border: none;
+    background-color: #F5F0E9;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    font-size: 20px;
+    color: var(--thm-black);
+    font-weight: 600;
+    padding: 23px 50px;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+} 
 .contact-one__form .input-group ::-webkit-input-placeholder {
     color: #878986;
     opacity: 1;
@@ -9642,7 +9650,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(91, 140, 81, 0.9);
+    background-color: #1FA138;
     content: "";
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
