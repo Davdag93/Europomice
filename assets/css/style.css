@@ -249,9 +249,6 @@ h6 {
     border: none !important;
     color: white;
 }
-.nav-prodotti:hover {
-    background: var(--thm-primary) !important;
-}
 .active {
     color: rgb(50, 47, 47) !important;
 }
@@ -4967,11 +4964,9 @@ h6 {
     right: -15px;
     bottom: -15px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .welcome_video_btn:hover {
-    background-color: var(--thm-primary);
-    color: var(--thm-base);
+    color: #fff;
 }
 /*--------------------------------------------------------------
 # Service Three
