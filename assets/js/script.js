@@ -8,7 +8,7 @@ button1.addEventListener("click", () => {
 });
 
 button2.addEventListener("click", () => {
-  text.textContent = "AREE VERDI";
+  text.textContent = "INFRASTRUTTURE VERDI";
 });
 
 button3.addEventListener("click", () => {
