@@ -1420,6 +1420,10 @@ h6 {
     color: rgb(79, 77, 77);
     font-weight: 600;
 }
+.topbar_three_right_box-toggle-it-en-2 p {
+    width: 160px;
+    text-align: end;
+}
 .topbar_three_right_box-toggle-it-en-2 a:hover {
     color: var(--thm-base);
 }
@@ -4886,8 +4890,8 @@ h6 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-top: -5px;
-    border: 1px solid #f5f0e9;
+    margin-top: -5px;/* 
+    border: 1px solid #f5f0e9; */
     padding: 10px;
 }
 .growing_icon_box {
@@ -4923,7 +4927,7 @@ h6 {
     padding: 103px 0;
     overflow: hidden;
     width: 100%;
-    box-shadow: 2px 2px 4px 1px rgb(37, 36, 36);
+    box-shadow: 2px 2px 5px 1px rgb(37, 36, 36);
 }
 .welcome_video_box:before {
     content: "";
@@ -7014,6 +7018,7 @@ h6 {
     padding: 30px 40px;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
+    cursor: pointer;
 }
 .download_file_box a {
     color: #ffffff;
@@ -7024,7 +7029,7 @@ h6 {
     align-items: center;
 }
 .download_file_box:hover {
-    background: var(--thm-primary);
+    background: var(--thm-base);
     color: #ffffff;
 }
 .download_file_box:hover a {
@@ -7038,7 +7043,15 @@ h6 {
     font-size: 40px;
     margin-right: 20px;
 }
-
+.card-hover:hover {
+    background-color: var(--thm-base) !important;
+}
+.collapsed {
+    text-decoration: none !important;
+}
+.card-hover:hover .collapsed {
+    color: #fff !important;
+}
 .service_details_One_img {
     margin-bottom: 45px;
 }
@@ -7825,7 +7838,7 @@ h6 {
     left: -10000px;
     bottom: 0;
     right: 0;
-    background: var(--thm-base);
+    background: #f5f0e9;
     z-index: -1;
 }
 .contact-one__form__wrap .block-title {
@@ -7835,7 +7848,7 @@ h6 {
     color: #ffffff;
 }
 .contact-one__form__wrap .block-title h3 {
-    color: #ffffff;
+    color: var(--thm-black);
 }
 .contact-one__form {
     margin-right: 114px;
@@ -7855,6 +7868,7 @@ h6 {
 }
 .input-group .contact__btn {
     margin-bottom: 0;
+    background: #1FA138;
 }
 .contact-one__form
     .input-group
@@ -7864,13 +7878,14 @@ h6 {
     height: 80px;
     display: block;
     border: none;
-    outline: none;
-    background-color: #eceeef;
+    outline: none; 
+    background-color: #fff; 
     font-size: 16px;
     font-weight: 500;
     color: #878986;
     padding-left: 30px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 .contact-one__form .input-group textarea {
@@ -7880,7 +7895,7 @@ h6 {
 
  .contact-one__btn {
     border: none;
-    background-color: #F5F0E9;
+    background-color: #1FA138;
     display: inline-block;
     vertical-align: middle;
     outline: none;
@@ -7892,6 +7907,9 @@ h6 {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 } 
+.contact-one__btn:hover {
+    color: #fff;
+}
 .contact-one__form .input-group ::-webkit-input-placeholder {
     color: #878986;
     opacity: 1;
