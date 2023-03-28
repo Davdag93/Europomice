@@ -98,7 +98,26 @@ font-family: 'Amatic SC', cursive;*/
     --thm-black-rgb: 64, 74, 61;
     --thm-gray: #eceeef;
 }
-
+.nav-link-news.active,.nav-pills .show>.nav-link-news {
+    margin-left: 20px;
+    margin-right: -20px;
+    transition: 0.5s;
+    text-align: end;
+    color: #fff !important;
+    background-color: var(--thm-base) !important;
+}
+.nav-link-news {
+    width: 70%;
+    text-align: start;
+    padding: 8px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--thm-black);
+    margin: 1px 0;
+    border: none;
+    border-radius: 5px !important;
+    background-color: #f5f0e9 !important;
+}
 body {
     font-family: var(--thm-font);
     color: rgb(135, 137, 134);
@@ -3841,6 +3860,19 @@ h6 {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     right: 0;
+    margin: 0 auto 20px auto;
+}
+.blog_one_date_box-large {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 42px;
+    width: 180px;
+    background: var(--thm-base);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: 0;
     margin: 0 auto;
 }
 .blog_one_date_box-aree-verdi {
@@ -3865,7 +3897,7 @@ h6 {
 .blog-one__content {
     position: relative;
     text-align: center;
-    background: #ffffff;
+    background:  #faf9f8;
     padding: 30px 50px 34px;
     margin-left: 10px;
     margin-right: 10px;
@@ -3900,15 +3932,27 @@ h6 {
 }
 
 .blog-one__meta {
-    margin: 0;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    justify-content: center;
-}
+    line-height: 1.2;
 
-.blog-one__meta li a {
+}
+.prog-conferenze {
+    font-size: 0.9em;
+    line-height: 2;
+}
+.prog-conferenze a {
+    color: var(--thm-black);
+}
+.prog-conferenze a:hover {
+    color: var(--thm-base)
+}
+.data-conferenze {
+    line-height: 2;
+    font-size: 0.9em;
+}
+.data-conferenze a {
+    color: var(--thm-base);
+}
+.blog-one__meta li {
     letter-spacing: 0.2em;
     color: var(--thm-primary);
     font-size: 12px;
@@ -3928,9 +3972,6 @@ h6 {
 }
 .blog-one__meta li a:hover i {
     color: var(--thm-base);
-}
-.blog-one__meta li + li {
-    margin-left: 25px;
 }
 .blog-one__content h3 {
     text-transform: unset;
@@ -3952,10 +3993,11 @@ h6 {
 }
 .blog_one_text {
     margin-top: 8px;
-    margin-bottom: 29px;
+    margin-bottom: 15px;
 }
 .blog_one_text p {
     margin: 0;
+    line-height: 1.7;
 }
 
 .read_more_btn a {
