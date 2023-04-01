@@ -605,6 +605,15 @@ Brand One Carousel
             .addClass("stricked-menu")
             .removeClass("original");
     }
+    if ($(".test-colore").length) {
+        $(".test-colore")
+            .addClass("original")
+            .clone(true)
+            .insertAfter(".test-colore")
+            .addClass("stricked-menu")
+            .addClass("marrone-chiaro")
+            .removeClass("original");
+    }
 
     if ($(".side-menu__toggler").length) {
         $(".side-menu__toggler").on("click", function (e) {

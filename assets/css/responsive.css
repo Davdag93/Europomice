@@ -1496,6 +1496,39 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .contact-nav-home {
+        display: none;
+    }   
+}
+@media only screen and (max-width: 1199px) {
+    .indirizzo-nav, .orari-nav, .telefono-nav  {
+        display: none !important;
+    }
+    .contatta-nav {
+        position: absolute;
+        margin-top: -15px;
+        right: 80px;
+    }
+    .main-nav__logo-1 {
+        margin-top: -15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contatta-nav {
+        display: none !important;
+    }
+    .main-nav__logo-1 {
+        margin-top: -15px;
+    }
+}
+@media only screen and (max-width: 575.5px) {
+    .main-nav-mobile {
+        right: 30px !important;
+    }
+
+
+}
 @media (max-width: 767px) {
     .stricked-menu {
         display: none;
@@ -1511,6 +1544,7 @@
     .main-nav__left .side-menu__toggler {
         margin-left: 0px;
     }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
